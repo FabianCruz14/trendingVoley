@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Gráfico de ejemplo</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://cdn.plotly.com/plotly-2.14.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radar Chart Example</title>
 </head>
 
 <body>
-    <div id="myDiv">
-        <h1>radar de rendimiento</h1>
 
-    </div>
     <h2>Ingresa los valores para la gráfica de radar:</h2>
-    <form id="dataForm">
-        <label>Aspecto 1: <input type="number" id="aspect1" required></label><br>
-        <label>Aspecto 2: <input type="number" id="aspect2" required></label><br>
-        <label>Aspecto 3: <input type="number" id="aspect3" required></label><br>
-        <label>Aspecto 4: <input type="number" id="aspect4" required></label><br>
-        <label>Aspecto 5: <input type="number" id="aspect5" required></label><br>
+    <form method="post">
+        <label>Aspecto 1: <input type="number" name="aspect1" required></label><br>
+        <label>Aspecto 2: <input type="number" name="aspect2" required></label><br>
+        <label>Aspecto 3: <input type="number" name="aspect3" required></label><br>
+        <label>Aspecto 4: <input type="number" name="aspect4" required></label><br>
+        <label>Aspecto 5: <input type="number" name="aspect5" required></label><br>
         <button type="submit">Generar Gráfica</button>
     </form>
 
-    <div id="radarChart"></div>
+    <div>
+        {{ graph_html | safe }}
+    </div>
 
-
-
-
-    <script src=" script.js">
-    </script>
 </body>
 
 </html>
