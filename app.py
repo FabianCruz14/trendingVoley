@@ -3,6 +3,8 @@ from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
 
+
+
 df = pd.DataFrame(dict(
     r=[1, 5, 2, 2, 3],
     theta=['processing cost','mechanical properties','chemical stability',
