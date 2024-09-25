@@ -1,18 +1,4 @@
-#myDiv {
-    text-align: center;
-    width: 720px;
-    height: 480px;
-    background-color: #2793e0;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-h1 {
-    text-align: center;
-    color: brown;
-    text-transform: capitalize;
+.test {
+    width: 600px;
+    height: 250px;
 }
