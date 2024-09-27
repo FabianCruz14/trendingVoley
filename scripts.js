@@ -1,8 +1,4 @@
-TESTER = document.getElementById('test');
-Plotly.newPlot(TESTER, [{
-    x: [1, 2, 3, 4, 5],
-    y: [1, 2, 4, 8, 16]
-}], {
-    margin: { t: 0 }
-});
-console.log(Plotly.BUILD);
+Plotly.newPlot("gd", /* JSON object */ {
+    "data": [{ "y": [1, 2, 3] }],
+    "layout": { "width": 600, "height": 400 }
+})
