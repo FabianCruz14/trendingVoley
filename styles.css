@@ -1,4 +1,9 @@
-.test {
+h1 {
+    text-align: center;
+}
+
+.static {
     width: 600px;
-    height: 250px;
+    height: 400px;
+    margin: 0 auto;
 }
